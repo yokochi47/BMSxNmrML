@@ -1,0 +1,57 @@
+
+    Usage notes for BMSxNmrML v1.1.0
+
+A. Requirements
+
+    OpenJDK 1.8 or later (http://www.oracle.com/)
+    * SAXON 9 or later (http://saxon.sourceforge.net/)
+    * owl-indexer (https://sourceforge.net/projects/owl-indexer/)
+    * bmsx-nmrml.jar, including Apache Lucene, Apatche Commons, Apatche Xerces
+    * nmrML XML Schema (https://github.com/nmrML/nmrML/blob/master/xml-schemata/nmrML.xsd)
+    ** ChEBI OWL file (ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl)
+    ** BMRB/XML documents (rsync://bmrbpub.protein.osaka-u.ac.jp/bmrb-xml/bms_xml_doc)
+
+    * They are already included.
+    ** They are downloaded while execution.
+
+B. How to generate nmrML documents of BMRB metabolomics spectral database (experimental entries only)
+
+ % ./update_nmrml.sh
+
+    nmrml_doc: includes complete nmrML documents with gzip compression
+    nmrml_raw: includes complete nmrML documents
+    nmrml_tmp: includes template nmrML documents
+    nmrml_obs: includes obsolete nmrML docuemnts
+    nmrml_err: includes error nmrML documents
+
+C. Source files of bmsx-nmrml.jar
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+    File path                        : Description
+-------------------------------------:------------------------------------------
+    src/BMSxNmrML.java               : Main class
+    src/BMSxNmrMLThrd.java           : Processing thread
+    src/AcquisitionParameterSet.java : Bruker acquisition parameter file parser
+    src/ProcessingParameterSet.java  : Bruker processing parameter file parser
+    src/PulseProgramAnnotation.java  : Bruker pulseprogram file parser
+    src/NmrMLSourceFile.java         : nmrML source file holder
+    src/XmlValidator.java            : XML Schema validation
+
+D. Questions or comment
+
+    Please contact to system maintainer (Masashi Yokochi) at PDBj-BMRB:
+
+    yokochi@protein.osaka-u.ac.jp
+
+    Copyright 2017-2018 PDBj-BMRB, Institute for Protein Research, Osaka University

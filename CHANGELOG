@@ -1,0 +1,35 @@
+ Changes in BMSxNmrML 1.1.0 (release 2018-02-06)
+
+  Updated nmrML from v1.0.rc1 to v1.0.0.
+  Updated nmrCV and chebi.owl.
+  Fixed problem of bmrbx2nmrml.xsl with current BMRB/XML.
+  Updated saxon9he.jar.
+  Apache License V2.0 branding.
+
+ Changes in BMSxNmrML 1.0.5 (release 2017-12-01)
+
+  Changed default mirror site from BMRB to PDBj-BMRB.
+  Added "chem_comp.info" file in each entry directory.
+  Updated owl-indexer from 1.2.1 to 1.2.2.
+
+ Changes in BMSxNmrML 1.0.4 (release 2017-04-20)
+
+  Updated owl-indexer from 1.1.1 to 1.2.1.
+
+ Changes in BMSxNmrML 1.0.3 (release 2017-03-22)
+
+  Updated nmrML.xsd and added support for acquisitionParameterRefList and processingParameterRefList.
+
+ Changes in BMSxNmrML 1.0.2 (release 2017-01-30)
+
+  Updated owl-indexer from 1.0.1 to 1.1.1.
+
+ Changes in BMSxNmrML 1.0.1 (release 2017-01-18)
+
+  Replaced userParam used for pointing "BMRB/XML file format" by nmrCV term (NMR:1000439).
+  Added "experiment.list" file in each entry directory.
+
+ Changes in BMSxNmrML 1.0.0 (release 2017-01-13)
+
+  First release.
+

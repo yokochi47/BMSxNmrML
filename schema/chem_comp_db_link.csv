@@ -1,0 +1,80 @@
+database_code:database_abbrev:URL pattern:
+ChemDB:chemdb:"http://cdb.ics.uci.edu/cgibin/ChemicalDetailWeb.py?chemical_id=":
+Comparative Toxicogenomics Database:ctd:"http://ctdbase.org/detail.go?type=chem&acc=":
+UM-BBD:bbd:"http://eawag-bbd.ethz.ch/servlets/pageservlet?ptype=c&compID=":
+MMCD:mmcd:"http://mmcd.nmrfam.wisc.edu/test/cqsearch.py?cqid=":
+NIST Chemistry WebBook:nist.webbook:"http://webbook.nist.gov/cgi/inchi/":InChi
+NIST:nist.webbook:"http://webbook.nist.gov/cgi/inchi/":InChi
+ChemSpider:chemspider:"http://www.chemspider.com/Chemical-Structure.xxxxx.html":
+CHEBI:chebi:"http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:":
+ChEBI:chebi:"http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:":
+IUPHAR-DB:Iuphar-db:"http://www.guidetopharmacology.org/GRAC/LigandDisplayForward?ligandId=":
+HMDB:hmdb:"http://www.hmdb.ca/metabolites/":
+811:hmdb:"http://www.hmdb.ca/metabolites/":
+kegg:kegg:"http://www.kegg.jp/dbget-bin/www_bget?":
+KEGG:kegg:"http://www.kegg.jp/dbget-bin/www_bget?":
+LeadScope:ls:"http://www.leadscope.com/structure_search_results.php?ss_string=":
+LipidMAPS:lipidmaps:"http://www.lipidmaps.org/data/LMSDRecord.php?LMID=":
+Sigma:sigma-aldrich:"http://www.sigmaaldrich.com/catalog/product/sigma/":
+Specs:specs:"http://www.specs.net/enter.php?specsid=":
+TCI (Tokyo Chemical Industry):tci:"http://www.tcichemicals.com/eshop/ja/jp/commodity/":
+ZINC:zinc:"http://zinc.docking.org/substance/":
+BioCyc:biocyc:"https://biocyc.org/compound?id=":
+CAS:cas:"https://chem.nlm.nih.gov/chemidplus/rn/":
+CAS Registry:cas:"https://chem.nlm.nih.gov/chemidplus/rn/":
+NIAID:niaid:"https://chemdb.niaid.nih.gov/CompoundDetails.aspx?AIDSNO=":
+BindingDB:bdbm:"https://www.bindingdb.org/bind/chemsearch/marvin/MolStructure.jsp?monomerid=":
+DrugBank:drugbank:"https://www.drugbank.ca/drugs/":
+ChEMBL:chembl:"https://www.ebi.ac.uk/chembl/compound/inspect/":
+Caswell No.:caswel:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22Caswell%20No.%20xxxx%22%5BCompleteSynonym%5D":
+CCRIS:ccris:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22CCRIS%20xxx%22%5BCompleteSynonym%5D":
+EPA DSSTox:dsstox:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22DSSTox_CID_xxx%22%5BCompleteSynonym%5D":
+EC Number:ec:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22EC%20xxx-xxx-x%22%5BCompleteSynonym%5D":
+EC:ec:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22EC%20xxx-xxx-x%22%5BCompleteSynonym%5D":
+EINECS:einecs:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22EINECS%20xxx-xxx-x%22%5BCompleteSynonym%5D":
+EPA Pesticide Chemical Code:epa:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22EPA%20Pesticide%20Chemical%20Code%20xxxxxx%22%5BCompleteSynonym%5D":
+FEMA No:fema:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22FEMA%20No.%20xxxx%22%5BCompleteSynonym%5D":
+FEMA No.:fema:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22FEMA%20No.%20xxxx%22%5BCompleteSynonym%5D":
+FEMA Number:fema:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22FEMA%20No.%20xxxx%22%5BCompleteSynonym%5D":
+FEMA:fema:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22FEMA%20No.%20xxxx%22%5BCompleteSynonym%5D":
+HSDB:hsdb:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22HSDB%20xxx%22%5BCompleteSynonym%5D":
+NSC:nsc:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22NSC%20xxx%22%5BCompleteSynonym%5D":
+Beilstein Handbook Reference:beilstein.handbook:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22x-xx-xx-xxxxx%20(Beilstein%20Handbook%20Reference)%22%5BCompleteSynonym%5D":
+ICCB-Longwood/NSRB Screening Facility, Harvard Medical School:hms:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22xxxxxx%22%5BCompleteSynonym%5D%20":
+ChemBank:chembank:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22xxxxxx%22%5BCompleteSynonym%5D%20":
+Ambinter:ambinter:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22xxxxxx%22%5BCompleteSynonym%5D%20":
+Center for Chemical Genomics, University of Michigan:ccg:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22xxxxxx%22%5BCompleteSynonym%5D%20":
+BIDD:bidd:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22xxxxxx%22%5BCompleteSynonym%5D%20":
+Structural Genomics Consortium:sgc:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22xxxxxx%22%5BCompleteSynonym%5D%20":
+PDSP:pdsp:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22xxxxxx%22%5BCompleteSynonym%5D%20":
+805:chemfrog:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22xxxxxx%22%5BCompleteSynonym%5D%20":
+NIH Clinical Collection:nih.smr:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22xxxxxx%22%5BCompleteSynonym%5D%20":
+MLSMR:mlsmr:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22xxxxxx%22%5BCompleteSynonym%5D%20":
+MTDP:mtdp:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22xxxxxx%22%5BCompleteSynonym%5D%20":
+NCGC:ncgc:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22xxxxxx%22%5BCompleteSynonym%5D%20":
+Emory University Molecular Libraries Screening Center:eu:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22xxxxxx%22%5BCompleteSynonym%5D%20":
+MDL:mfcd:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22xxxxxx%22%5BCompleteSynonym%5D%20":
+MDL number:mfcd:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22xxxxxx%22%5BCompleteSynonym%5D%20":
+Sigma-Aldrich:sigma-aldrich:"https://www.ncbi.nlm.nih.gov/pcsubstance/?term=%22xxxxxx%22%5BCompleteSynonym%5D%20":
+DTP/NCI:::
+ChemIDplus:::
+NMRShiftDB:::
+SMID:::
+ChemBridge:::
+Thomson Pharma:::
+NINDS Approved Drug Screening Program:::
+pubchem:pubchem::
+PDB:pdb::
+R&D Chemicals:::
+814:::
+MMDB:::
+NextBio:::
+Beilstein Registry Number:::
+PubChem:pubchem::
+BIND:::
+Shanghai Institute of Organic Chemistry:::
+CambridgeSoft Corporation:::
+DiscoveryGate:::
+University of Pittsburgh Molecular Library Screening Center:::
+NovoSeek:::
+Biological Magnetic Resonance Data Bank (BMRB):bmrb.metabolomics::

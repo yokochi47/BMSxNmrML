@@ -1,0 +1,38 @@
+
+BMSxNmrML v1.1.0 - nmrML converter for BMRB metabolomics entries
+Copyright (c) 2017-2018 Masashi Yokochi
+
+    https://github.com/yokochi47/BMRBxTool/
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+Reference:
+
+ Yokochi M, Kobayashi N, Ulrich EL, Kinjo AR, Iwata T, Ioannidis YE, Linvy M,
+ Markley JL, Nakamura H, Kojima C, Fujiwara T,
+ "Publication of nuclear magnetic resonance experimental data with semantic web
+  technology and the application thereof to biomedical research of proteins",
+ J. Biomed. Semantics, 7, 1-4 (2016)
+
+ Daniel Schober, Daniel Jacob, Michael Wilson, Joseph A. Cruz, Ana Marcu,
+ Jason R. Grant, Annick Moing, Catherine Deborde, Luis F de Figueiredo,
+ Kenneth Haug, Philippe Rocca-Serra, John M Easton, Timothy M.D. Ebbels,
+ Jie Hao, Christian Ludwig, Ulrich L. Günther, Antonio Rosato, Matthias
+ S. Klein, Ian Lewis, Claudio Luchinat, Andrew R Jones, Arturas Grauslys,
+ Martin Larralde, Masashi Yokochi, Naohiro Kobayashi, Andrea Porzel,
+ Julian Griffin, Mark R. Viant, David S Wishart, Christoph Steinbeck,
+ Reza M Salek, and Steffen Neumann,
+ "nmrML: A Community Supported Open Data Standard for the Description,
+  Storage, and Exchange of NMR Data",
+ Anal. Chem., 90(1), 649-656 (2017)
+
