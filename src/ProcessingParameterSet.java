@@ -2,7 +2,7 @@
     BMSxNmrML - nmrML converter for BMRB metabolomics entries
     Copyright 2017-2018 Masashi Yokochi
     
-    https://github.com/yokochi47/BMRBxTool
+    https://github.com/yokochi47/BMSxNmrML
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
