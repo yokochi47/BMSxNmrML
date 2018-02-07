@@ -86,12 +86,12 @@ fi
 
 MIRROR_SITE=osaka
 
-SAXON_JAR_FILE=extlibs/saxon9he.jar
+SAXON=extlibs/saxon9he.jar
 
-EXT_EXP_ID_XSLT_CODE=schema/ext_exp_id.xsl
-EXT_EXP_NAME_XSLT_CODE=schema/ext_exp_name.xsl
-EXT_CHEM_COMP_XSLT_CODE=schema/ext_chem_comp.xsl
-BMS_NMRML_XSLT_CODE=schema/bmrbx2nmrml.xsl
+EXT_EXP_ID_XSL=schema/ext_exp_id.xsl
+EXT_EXP_NAME_XSL=schema/ext_exp_name.xsl
+EXT_CHEM_COMP_XSL=schema/ext_chem_comp.xsl
+BMRBX2NMRML_XSL=schema/bmrbx2nmrml.xsl
 
 NMRML_DOC_DIR=nmrml_doc
 NMRML_RAW_DIR=nmrml_raw
@@ -126,19 +126,19 @@ do
 
  if [ -e $XML_DOC ] && [ ! -e $EXP_LIST_FILE ] ; then
 
-  java -jar $SAXON_JAR_FILE -s:$XML_DOC -xsl:$EXT_EXP_NAME_XSLT_CODE -versionmsg:off > $EXP_LIST_FILE
+  java -jar $SAXON -s:$XML_DOC -xsl:$EXT_EXP_NAME_XSL -versionmsg:off > $EXP_LIST_FILE
 
  fi
 
  if [ -e $XML_DOC ] && [ ! -e $CHEM_COMP_FILE ] ; then
 
-  java -jar $SAXON_JAR_FILE -s:$XML_DOC -xsl:$EXT_CHEM_COMP_XSLT_CODE -versionmsg:off > $CHEM_COMP_FILE
+  java -jar $SAXON -s:$XML_DOC -xsl:$EXT_CHEM_COMP_XSL -versionmsg:off > $CHEM_COMP_FILE
 
  fi
 
  if [ -e $XML_DOC ] && [ ! -e $NMRML_FILE ] ; then
 
-  exp_ids=`java -jar $SAXON_JAR_FILE -s:$XML_DOC -xsl:$EXT_EXP_ID_XSLT_CODE -versionmsg:off`
+  exp_ids=`java -jar $SAXON -s:$XML_DOC -xsl:$EXT_EXP_ID_XSL -versionmsg:off`
 
   echo $BASENAME
 
@@ -153,7 +153,7 @@ do
 
    if [ ! -e $NMRML_FILE ] || [ -e $NMRML_ERR ] ; then
 
-    java -jar $SAXON_JAR_FILE -s:$XML_DOC -xsl:$BMS_NMRML_XSLT_CODE -o:$NMRML_FILE -versionmsg:off exp_id=$exp_id mirror=$MIRROR_SITE 2> $NMRML_ERR
+    java -jar $SAXON -s:$XML_DOC -xsl:$BMRBX2NMRML_XSL -o:$NMRML_FILE -versionmsg:off exp_id=$exp_id mirror=$MIRROR_SITE 2> $NMRML_ERR
 
     if [ $? = 0 ] ; then
      rm -f $NMRML_ERR
@@ -173,10 +173,10 @@ done
 
 echo
 
-BMSX_NMRML_JAR_FILE=extlibs/bmsx-nmrml.jar
+BMSX_NMRML=bmsx-nmrml.jar
 echo Completing nmrML documents...
 
-java -jar $BMSX_NMRML_JAR_FILE --tmp-dir $NMRML_TMP_DIR --out-dir $NMRML_RAW_DIR --obs-dir $NMRML_OBS_DIR --err-dir $NMRML_ERR_DIR --nmrml-xsd $NMRML_XSD --chebi-owl-idx $CHEBI_OWL_IDX --max-thrds $MAXPROCS
+java -jar $BMSX_NMRML --tmp-dir $NMRML_TMP_DIR --out-dir $NMRML_RAW_DIR --obs-dir $NMRML_OBS_DIR --err-dir $NMRML_ERR_DIR --nmrml-xsd $NMRML_XSD --chebi-owl-idx $CHEBI_OWL_IDX --max-thrds $MAXPROCS
 
 if [ $? != 0 ] ; then
  exit 1

@@ -1,7 +1,7 @@
 #!/bin/bash
 
-SAXON_JAR_FILE=../extlibs/saxon9he.jar
-XSLT_CODE=bmrbx2nmrml.xsl
+SAXON=../extlibs/saxon9he.jar
+BMRBX2NMRML_XSL=bmrbx2nmrml.xsl
 
 rm -f *.nmrML
 
@@ -19,7 +19,7 @@ fi
 NMRML_DOC=$ENTRY_ID-exp$_EXP_ID.nmrML
 NMRML_ERR=$ENTRY_ID-exp$_EXP_ID.err
 
-java -jar $SAXON_JAR_FILE -s:$XML_DOC -xsl:$XSLT_CODE -o:$NMRML_DOC -versionmsg:off exp_id=$EXP_ID 2> $NMRML_ERR
+java -jar $SAXON -s:$XML_DOC -xsl:$BMRBX2NMRML_XSL -o:$NMRML_DOC -versionmsg:off exp_id=$EXP_ID 2> $NMRML_ERR
 
 if [ $? = 0 ] ; then
 
