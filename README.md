@@ -8,7 +8,7 @@ Please refer to [USAGE](https://github.com/yokochi47/BMRBoTool/blob/master/USAGE
 
 ## Reference
 
-- Yokochi M, Kobayashi N, Ulrich EL, Kinjo AR, Iwata T, Ioannidis YE, Linvy M, Markley JL, Nakamura H, Kojima C, Fujiwara T,<br />
+- Masashi Yokochi, Naohiro Kobayashi, Eldon L. Ulrich, Akira R. Kinjo, Takeshi Iwata, Yannis E. Ioannidis, Miron Linvy, John L. Markley, Haruki Nakamura, Chojiro Kojima, Toshimichi Fujiwara,<br />
  "Publication of nuclear magnetic resonance experimental data with semantic web technology and the application thereof to biomedical research of proteins", J. Biomed. Semantics, 7, 1-4 (2016)
 
 - Daniel Schober, Daniel Jacob, Michael Wilson, Joseph A. Cruz, Ana Marcu, Jason R. Grant, Annick Moing, Catherine Deborde, Luis F de Figueiredo, Kenneth Haug, Philippe Rocca-Serra, John M Easton, Timothy M.D. Ebbels, Jie Hao, Christian Ludwig, Ulrich L. Günther, Antonio Rosato, Matthias S. Klein, Ian Lewis, Claudio Luchinat, Andrew R Jones, Arturas Grauslys, Martin Larralde, Masashi Yokochi, Naohiro Kobayashi, Andrea Porzel, Julian Griffin, Mark R. Viant, David S Wishart, Christoph Steinbeck, Reza M Salek, and Steffen Neumann,<br />
