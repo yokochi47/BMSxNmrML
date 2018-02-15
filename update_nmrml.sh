@@ -77,11 +77,7 @@ NMRML_XSD=schema/nmrML.xsd
 CHEBI_OWL_IDX=schema/chebi_luceneidx
 
 if [ ! -d $CHEBI_OWL_IDX ] ; then
-
- cd schema
- ./chebi_luceneidx.sh
- cd ..
-
+ ( cd schema; ./chebi_luceneidx.sh )
 fi
 
 MIRROR_SITE=osaka
