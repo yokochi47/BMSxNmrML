@@ -54,19 +54,13 @@ do
 
  if [ -e $XML_ZIP ] && [ ! -e $XML_DOC ] ; then
 
-  cp -f $XML_ZIP $RAW_DIR
-
-  gunzip -f $XML_DOC.gz
+  cp -f $XML_ZIP $RAW_DIR && gunzip -f $XML_DOC.gz
 
   if [ $? = 0 ] ; then
-
-    echo -n .
-
+   echo -n .
   else
-
    echo -e "${red}$BASENAME.xml failed.${normal}"
    let errs++
-
   fi
 
  fi
@@ -172,11 +166,7 @@ echo
 BMSX_NMRML=bmsx-nmrml.jar
 echo Completing nmrML documents...
 
-java -jar $BMSX_NMRML --tmp-dir $NMRML_TMP_DIR --out-dir $NMRML_RAW_DIR --obs-dir $NMRML_OBS_DIR --err-dir $NMRML_ERR_DIR --nmrml-xsd $NMRML_XSD --chebi-owl-idx $CHEBI_OWL_IDX --max-thrds $MAXPROCS
-
-if [ $? != 0 ] ; then
- exit 1
-fi
+java -jar $BMSX_NMRML --tmp-dir $NMRML_TMP_DIR --out-dir $NMRML_RAW_DIR --obs-dir $NMRML_OBS_DIR --err-dir $NMRML_ERR_DIR --nmrml-xsd $NMRML_XSD --chebi-owl-idx $CHEBI_OWL_IDX --max-thrds $MAXPROCS || exit 1
 
 need_file_list=need_file_list
 
@@ -196,8 +186,6 @@ find $NMRML_ERR_DIR/*.nmrML &> /dev/null
 if [ $? != 0 ] ; then
  rmdir $NMRML_ERR_DIR
 fi
-
-ZIP=gzip
 
 if [ ! -d $NMRML_RAW_DIR ] ; then
 
@@ -260,12 +248,7 @@ do
   NMRML_DST_FILE=$NMRML_DST_DIR/$BASENAME
 
   if [ ! -e $NMRML_DST_FILE".gz" ] ; then
-
-   cp -f $NMRML_SRC_FILE $NMRML_DST_FILE
-
-   $ZIP -f $NMRML_DST_FILE
-   echo $BASENAME".gz" done.
-
+   cp -f $NMRML_SRC_FILE $NMRML_DST_FILE && gzip -f $NMRML_DST_FILE && echo $BASENAME".gz" done.
   fi
 
  done
