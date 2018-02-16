@@ -12,8 +12,10 @@ _EXP_ID=`printf '%02d' $exp_id`
 XML_DOC=../bms_xml_raw/$ENTRY_ID.xml
 
 if [ ! -e $XML_DOC ] ; then
+
  echo "Couldn't find "$XML_DOC
  exit 1
+
 fi
 
 NMRML_DOC=$ENTRY_ID-exp$_EXP_ID.nmrML

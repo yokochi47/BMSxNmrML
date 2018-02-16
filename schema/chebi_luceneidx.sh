@@ -40,15 +40,13 @@ if [ ! -e $OWL_NAME ] ; then
  grep 'not retrieving' $WGET_LOG > /dev/null
 
  if [ $? = 0 ] && [ -d $CHEBI_OWL_INDEX ] ; then
+
   echo $OWL_NAME is update.
   exit 0
+
  fi
 
- grep 'No such file' $WGET_LOG > /dev/null
-
- if [ $? = 0 ] ; then
-  exit $?
- fi
+ grep 'No such file' $WGET_LOG > /dev/null && exit 1
 
  cp -f $DB_FTP/$GZ_FILE $GZ_FILE
  gunzip $GZ_FILE
