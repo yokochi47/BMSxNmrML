@@ -1,3 +1,8 @@
+ Changes in BMSxNmrML 1.1.1 (release 2018-03-30)
+
+  Updated saxon9he.jar.
+  Updated owl-indexer from 1.2.2 to 1.2.3.
+
  Changes in BMSxNmrML 1.1.0 (release 2018-02-06)
 
   Updated nmrML from v1.0.rc1 to v1.0.0.
