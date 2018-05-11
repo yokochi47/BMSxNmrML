@@ -26,29 +26,25 @@ if [ -d $CHEBI_OWL_INDEX ] ; then
 
 fi
 
-if [ ! -e $OWL_NAME ] ; then
+wget -c -m ftp://$DB_FTP/$GZ_FILE -o $WGET_LOG
 
- wget -c -m ftp://$DB_FTP/$GZ_FILE -o $WGET_LOG
+if [ $? != 0 ] ; then
 
- if [ $? != 0 ] ; then
-
-  cat $WGET_LOG
-  exit 1
-
- fi
-
- grep 'not retrieving' $WGET_LOG > /dev/null
-
- if [ $? = 0 ] && [ -d $CHEBI_OWL_INDEX ] ; then
-
-  echo $OWL_NAME is update.
-  exit 0
-
- fi
-
- grep 'No such file' $WGET_LOG > /dev/null && exit 1
+ cat $WGET_LOG
+ exit 1
 
 fi
+
+grep 'not retrieving' $WGET_LOG > /dev/null
+
+if [ $? = 0 ] && [ -d $CHEBI_OWL_INDEX ] ; then
+
+ echo $OWL_NAME is update.
+ exit 0
+
+fi
+
+grep 'No such file' $WGET_LOG > /dev/null && exit 1
 
 java -classpath ../extlibs/owl-indexer.jar owl2luceneidx --owl $DB_FTP/$GZ_FILE --idx-dir $CHEBI_OWL_INDEX --xmlns rdfs=http://www.w3.org/2000/01/rdf-schema# --attr rdfs:label
 
