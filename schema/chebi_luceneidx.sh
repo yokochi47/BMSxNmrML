@@ -48,10 +48,7 @@ if [ ! -e $OWL_NAME ] ; then
 
  grep 'No such file' $WGET_LOG > /dev/null && exit 1
 
- cp -f $DB_FTP/$GZ_FILE $GZ_FILE
- gunzip $GZ_FILE
-
 fi
 
-java -classpath ../extlibs/owl-indexer.jar owl2luceneidx --owl $OWL_NAME --idx-dir $CHEBI_OWL_INDEX --xmlns rdfs=http://www.w3.org/2000/01/rdf-schema# --attr rdfs:label
+java -classpath ../extlibs/owl-indexer.jar owl2luceneidx --owl $DB_FTP/$GZ_FILE $GZ_FILE --idx-dir $CHEBI_OWL_INDEX --xmlns rdfs=http://www.w3.org/2000/01/rdf-schema# --attr rdfs:label
 
