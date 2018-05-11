@@ -50,5 +50,5 @@ if [ ! -e $OWL_NAME ] ; then
 
 fi
 
-java -classpath ../extlibs/owl-indexer.jar owl2luceneidx --owl $DB_FTP/$GZ_FILE $GZ_FILE --idx-dir $CHEBI_OWL_INDEX --xmlns rdfs=http://www.w3.org/2000/01/rdf-schema# --attr rdfs:label
+java -classpath ../extlibs/owl-indexer.jar owl2luceneidx --owl $DB_FTP/$GZ_FILE --idx-dir $CHEBI_OWL_INDEX --xmlns rdfs=http://www.w3.org/2000/01/rdf-schema# --attr rdfs:label
 
