@@ -1,15 +1,15 @@
 
-    Usage notes for BMSxNmrML v1.1.2
+    Usage notes for BMSxNmrML v1.2.0
 
 A. Requirements
 
-    OpenJDK 1.8 or later (http://www.oracle.com/)
-    * SAXON 9 or later (http://saxon.sourceforge.net/)
+    OpenJDK 1.8 or later (https://www.oracle.com/)
+    * SAXON 9 or later (https://saxon.sourceforge.net/)
     * owl-indexer (https://sourceforge.net/projects/owl-indexer/)
     * bmsx-nmrml.jar, including Apache Lucene, Apatche Commons, Apatche Xerces
     * nmrML XML Schema (https://github.com/nmrML/nmrML/blob/master/xml-schemata/nmrML.xsd)
     ** ChEBI OWL file (ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl)
-    ** BMRB/XML documents (rsync://bmrbpub.protein.osaka-u.ac.jp/bmrb-xml/bms_xml_doc)
+    ** BMRB/XML documents (rsync://bmrbpub.pdbj.org/bmrb-xml/bms_xml_doc)
 
     * They are already included.
     ** They are downloaded while execution.

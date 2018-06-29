@@ -1,7 +1,7 @@
 /*
     BMSxNmrML - nmrML converter for BMRB metabolomics entries
     Copyright 2017-2018 Masashi Yokochi
-    
+
     https://github.com/yokochi47/BMSxNmrML
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -80,6 +80,8 @@ public class XmlValidator {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+
+		dom_parser.reset();
 
 		if (err_handler.success)
 			System.out.println(xml_file.getName() + " is valid.");

@@ -1,3 +1,7 @@
+ Changes in BMSxNmrML 1.2.0 (release 2018-06-29)
+
+  Changed namespace URI from http://bmrbpub.protein.osaka-u.ac.jp/schema/mmcif_nmr-star.xsd to https://bmrbpub.pdbj.org/schema/mmcif_nmr-star.xsd.
+
  Changes in BMSxNmrML 1.1.2 (release 2018-06-09)
 
   Updated saxon9he.jar.

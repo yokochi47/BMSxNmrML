@@ -1,6 +1,6 @@
 ﻿# BMSxNmrML
 
-The BMSxNmrML converts [**BMRB/XML**](http://bmrbpub.protein.osaka-u.ac.jp/archive/xml-noatom) of BMRB metabolomics entries to [**nmrML**](http://nmrml.org/). The nmrML is an open mark-up language for NMR data (FID). The BMSxNmrML utilizes [**owl-indexer**](https://sourceforge.net/projects/owl-indexer/), an OWL literal indexing tool, for identifying chemical compounds from [**ChEBI OWL**](http://www.ebi.ac.uk/chebi/downloadsForward.do).
+The BMSxNmrML converts [**BMRB/XML**](https://bmrbpub.pdbj.org/archive/xml-noatom) of BMRB metabolomics entries to [**nmrML**](http://nmrml.org/). The nmrML is an open mark-up language for NMR data (FID). The BMSxNmrML utilizes [**owl-indexer**](https://sourceforge.net/projects/owl-indexer/), an OWL literal indexing tool, for identifying chemical compounds from [**ChEBI OWL**](https://www.ebi.ac.uk/chebi/downloadsForward.do).
 
 ## Usage
 

@@ -4,7 +4,7 @@
   version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:BMRBx="http://bmrbpub.protein.osaka-u.ac.jp/schema/mmcif_nmr-star.xsd">
+  xmlns:BMRBx="https://bmrbpub.pdbj.org/schema/mmcif_nmr-star.xsd">
 
   <xsl:output method="text"/>
   <xsl:strip-space elements="*"/>
