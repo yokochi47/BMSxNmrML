@@ -5,7 +5,7 @@
   xmlns="http://nmrml.org/schema"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:BMRBx="http://bmrbpub.protein.osaka-u.ac.jp/schema/mmcif_nmr-star.xsd">
+  xmlns:BMRBx="https://bmrbpub.pdbj.org/schema/mmcif_nmr-star.xsd">
 
   <xsl:param name="exp_id" required="yes"/>
   <xsl:param name="mirror"/>
@@ -34,9 +34,9 @@
 
   <xsl:variable name="pdbj-bmrb">
     <xsl:choose>
-      <xsl:when test="starts-with($entry_id, 'bmse')">http://bmrb.pdbj.org/ftp/pub/bmrb/metabolomics/NMR_STAR_experimental_entries/</xsl:when>
-      <xsl:when test="starts-with($entry_id, 'bmst')">http://bmrb.pdbj.org/ftp/pub/bmrb/metabolomics/NMR_STAR_theoretical_entries/</xsl:when>
-      <xsl:otherwise>http://bmrb.pdbj.org/ftp/pub/bmrb/entry_lists/nmr-star3.1/</xsl:otherwise>
+      <xsl:when test="starts-with($entry_id, 'bmse')">https://bmrb.pdbj.org/ftp/pub/bmrb/metabolomics/NMR_STAR_experimental_entries/</xsl:when>
+      <xsl:when test="starts-with($entry_id, 'bmst')">https://bmrb.pdbj.org/ftp/pub/bmrb/metabolomics/NMR_STAR_theoretical_entries/</xsl:when>
+      <xsl:otherwise>https://bmrb.pdbj.org/ftp/pub/bmrb/entry_lists/nmr-star3.1/</xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
 
@@ -63,13 +63,13 @@
   </xsl:variable>
 
   <xsl:variable name="bmrb-xml_url">
-    <xsl:value-of select="concat('http://bmrbpub.protein.osaka-u.ac.jp/archive/xml/',$bmr_entry_id,'.xml.gz')"/>
+    <xsl:value-of select="concat('https://bmrbpub.pdbj.org/archive/xml/',$bmr_entry_id,'.xml.gz')"/>
   </xsl:variable>
 
   <xsl:variable name="pdbj-bmrbdep">
     <xsl:choose>
-      <xsl:when test="starts-with($entry_id, 'bms')">http://bmrbdep.pdbj.org/bms/</xsl:when>
-      <xsl:otherwise>http://bmrbdep.pdbj.org/bmr/bmr</xsl:otherwise>
+      <xsl:when test="starts-with($entry_id, 'bms')">https://bmrbdep.pdbj.org/bms/</xsl:when>
+      <xsl:otherwise>https://bmrbdep.pdbj.org/bmr/bmr</xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
 
@@ -145,7 +145,7 @@
     <xsl:value-of select="/BMRBx:datablock/BMRBx:chem_compCategory/BMRBx:chem_comp/BMRBx:inchi_code"/>
   </xsl:variable>
 
-  <xsl:variable name="bmrb.metabolomics">http://bmrbdep.pdbj.org/bms/</xsl:variable>
+  <xsl:variable name="bmrb.metabolomics">https://bmrbdep.pdbj.org/bms/</xsl:variable>
   <xsl:variable name="pdb.ligand">http://ligand-expo.rcsb.org/pyapps/ldHandler.py?formid=cc-index-search&amp;operation=ccid&amp;target=</xsl:variable>
 
   <xsl:variable name="pubchem.substance">https://pubchem.ncbi.nlm.nih.gov/substance/</xsl:variable>

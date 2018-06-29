@@ -14,7 +14,7 @@ SRC_DIR=bms_xml_doc
 weekday=`date -u +"%w"`
 
 if [ $weekday -ge 1 ] && [ $weekday -le 4 ] ; then
- rsync -av --delete rsync://bmrbpub.protein.osaka-u.ac.jp/bmrb-xml/$SRC_DIR .
+ rsync -av --delete rsync://bmrbpub.pdbj.org/bmrb-xml/$SRC_DIR .
 fi
 
 xml_file_total=xml_file_total
