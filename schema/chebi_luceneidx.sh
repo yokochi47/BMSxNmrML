@@ -26,7 +26,7 @@ if [ -d $CHEBI_OWL_INDEX ] ; then
 
 fi
 
-wget -c -m ftp://$DB_FTP/$GZ_FILE -o $WGET_LOG || cat $WGET_LOG && exit 1
+wget -c -m ftp://$DB_FTP/$GZ_FILE -o $WGET_LOG || ( cat $WGET_LOG && exit 1 )
 
 grep 'not retrieving' $WGET_LOG > /dev/null
 
