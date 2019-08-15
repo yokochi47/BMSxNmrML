@@ -1,6 +1,6 @@
 /*
     BMSxNmrML - nmrML converter for BMRB metabolomics entries
-    Copyright 2017-2018 Masashi Yokochi
+    Copyright 2017-2019 Masashi Yokochi
     
     https://github.com/yokochi47/BMSxNmrML
 
@@ -544,7 +544,7 @@ public class BMSxNmrMLThrd implements Runnable {
 
 					TopDocs results = chebi_owl_searcher.search(query, 1);
 
-					if (results.totalHits == 0) {
+					if (results.totalHits.value == 0) {
 						System.err.println("No matching documents for " + query_code + ".");
 						return false;
 					}
@@ -1935,7 +1935,7 @@ public class BMSxNmrMLThrd implements Runnable {
 
 					TopDocs results = chebi_owl_searcher.search(query, 1);
 
-					if (results.totalHits == 0) {
+					if (results.totalHits.value == 0) {
 						//						System.err.println("No matching documents for " + query_code + ".");
 						return false;
 					}
