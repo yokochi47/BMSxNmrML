@@ -27,7 +27,7 @@ public class BMSxNmrML {
 	public static final String document_id = "document_id";
 	public static final String rdfs_label = "rdfs:label";
 
-	public static final String bmrbx_namespace_uri = "https://bmrbpub.pdbj.org/schema/mmcif_nmr-star.xsd";
+	public static final String bmrbx_namespace_uri = "http://bmrbpub.pdbj.org/schema/mmcif_nmr-star.xsd";
 
 	public static final String indent_space = "   ";
 	public static final int indent_spaces = 3;

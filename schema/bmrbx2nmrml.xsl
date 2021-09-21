@@ -5,7 +5,7 @@
   xmlns="http://nmrml.org/schema"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:BMRBx="https://bmrbpub.pdbj.org/schema/mmcif_nmr-star.xsd">
+  xmlns:BMRBx="http://bmrbpub.pdbj.org/schema/mmcif_nmr-star.xsd">
 
   <xsl:param name="exp_id" required="yes"/>
   <xsl:param name="mirror"/>
@@ -26,8 +26,8 @@
 
   <xsl:variable name="bmrb">
     <xsl:choose>
-      <xsl:when test="starts-with($entry_id, 'bmse')">http://www.bmrb.wisc.edu/ftp/pub/bmrb/metabolomics/NMR_STAR_experimental_entries/</xsl:when>
-      <xsl:when test="starts-with($entry_id, 'bmst')">http://www.bmrb.wisc.edu/ftp/pub/bmrb/metabolomics/NMR_STAR_theoretical_entries/</xsl:when>
+      <xsl:when test="starts-with($entry_id, 'bmse')">https://bmrb.io/ftp/pub/bmrb/metabolomics/NMR_STAR_experimental_entries/</xsl:when>
+      <xsl:when test="starts-with($entry_id, 'bmst')">https://bmrb.io/ftp/pub/bmrb/metabolomics/NMR_STAR_theoretical_entries/</xsl:when>
       <xsl:otherwise>http://www.bmrb.wisc.edu/ftp/pub/bmrb/entry_lists/nmr-star3.1/</xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
@@ -37,14 +37,6 @@
       <xsl:when test="starts-with($entry_id, 'bmse')">https://bmrb.pdbj.org/ftp/pub/bmrb/metabolomics/NMR_STAR_experimental_entries/</xsl:when>
       <xsl:when test="starts-with($entry_id, 'bmst')">https://bmrb.pdbj.org/ftp/pub/bmrb/metabolomics/NMR_STAR_theoretical_entries/</xsl:when>
       <xsl:otherwise>https://bmrb.pdbj.org/ftp/pub/bmrb/entry_lists/nmr-star3.1/</xsl:otherwise>
-    </xsl:choose>
-  </xsl:variable>
-
-  <xsl:variable name="bmrb-cerm">
-    <xsl:choose>
-      <xsl:when test="starts-with($entry_id, 'bmse')">http://bmrb.cerm.unifi.it/ftp/pub/bmrb/metabolomics/NMR_STAR_experimental_entries/</xsl:when>
-      <xsl:when test="starts-with($entry_id, 'bmst')">http://bmrb.cerm.unifi.it/ftp/pub/bmrb/metabolomics/NMR_STAR_theoretical_entries/</xsl:when>
-      <xsl:otherwise>http://bmrb.cerm.unifi.it/ftp/pub/bmrb/entry_lists/nmr-star3.1/</xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
 
